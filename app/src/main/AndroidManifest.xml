@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kitchen.medicinetracker">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    ﻿
+    <uses-permission android:name="android.permission.INTERNET" />
+    ﻿
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pill_bottle"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pill_bottle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".AlarmReceiver2" />
+        <receiver android:name=".AlarmReceiver3" />
+
+        <activity
+            android:name=".AddAlarm"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/ActivityTheme" />
+
+        <provider
+            android:name=".data.AlarmProvider"
+            android:authorities="com.example.kitchen.medicinetracker"
+            android:exported="false" />
+        <provider
+            android:name=".data.ReportProvider"
+            android:authorities="com.example.medicinetracker"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAlarm"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditAlarm"
+            android:parentActivityName=".ViewAlarm"
+            android:theme="@style/ActivityTheme" />
+        <activity android:name=".ReportList"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ViewReport"
+            android:parentActivityName=".ReportList"/>
+    </application>
+
+</manifest>

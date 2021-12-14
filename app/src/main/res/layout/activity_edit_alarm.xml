@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent_view">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toptoolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#FFF"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="end"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/save"/>
+            <Button
+                android:text="DELETE"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/delete"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <TimePicker
+        android:id="@+id/editTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:amPmTextColor="#000"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Label"
+        android:layout_margin="20dp"
+        android:id="@+id/edit_label"/>
+
+
+</LinearLayout>

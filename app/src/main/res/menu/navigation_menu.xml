@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/home"
+    android:title="Home"
+    android:icon="@drawable/home"/>
+    <item android:id="@+id/view_alamrs"
+        android:title="View Reminders"
+        android:icon="@drawable/alarm"/>
+    <item android:id="@+id/view_reports"
+        android:title="Reports"
+        android:icon="@drawable/report"/>
+
+</menu>

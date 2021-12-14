@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "223325736732",
+    "firebase_url": "https://iot-pill-bottle-5eaec.firebaseio.com",
+    "project_id": "iot-pill-bottle-5eaec",
+    "storage_bucket": "iot-pill-bottle-5eaec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223325736732:android:3ce052507833612c",
+        "android_client_info": {
+          "package_name": "com.example.kitchen.medicinetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223325736732-2b9ajj3qr7ab3ge8ag6e34ud3a1f18jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kitchen.medicinetracker",
+            "certificate_hash": "0073f3f9c4060ae1360d7c6f88103fe36fa2c768"
+          }
+        },
+        {
+          "client_id": "223325736732-u1b6ivfj2k1ogvukagi98r5916u7v0en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQED42P4odI_3V8l-6CKw2qtmKvrah6xM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223325736732-u1b6ivfj2k1ogvukagi98r5916u7v0en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

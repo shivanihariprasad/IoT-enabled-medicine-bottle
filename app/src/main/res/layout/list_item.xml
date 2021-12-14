@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Alarm"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:paddingBottom="20dp"
+        android:id="@+id/label2"
+        android:layout_marginStart="10dp"
+       />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2B3D4D"
+        android:textSize="50sp"
+       android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        tools:text="9:00"
+        android:layout_alignBottom="@id/label"
+        />
+    <TextView
+        android:id="@+id/am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        tools:text="PM"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toEndOf="@+id/time"
+        android:paddingLeft="5dp"/>
+
+
+    <TextView
+        android:id="@+id/Edit"
+        android:text="Edit >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#AEB6BD"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/am_pm"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
